@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CUENTAFACILSA</title>
+    <style>
+        body {
+            background-color: #59b69a;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            border-radius: 30px;
+            min-height: 100px;
+            width: 96%;
+            font-size: 5em;
+            text-align: center;
+            background-color: #6bb659;
+            color: black;
+            margin: 20px auto;
+            padding: 20px;
+            text-shadow: 2px 2px 2px white;
+            box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2);
+            font-family: Cooper Black;
+        }
+
+        nav {
+            border-radius: 15px;
+            background-color: #6bb659;
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            margin: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: green;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        section {
+            flex: 1 1 75%; /* Flex-grow, flex-shrink, flex-basis */
+            min-height: calc(100vh - 200px);
+            background-color: #6bb659;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        aside {
+            flex: 1 1 20%;
+            background-color: #6bb659;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #6bb659;
+            height: 100px;
+            text-align: center;
+            padding-top: 30px;
+            font-size: 1.2em;
+        }
+
+        img {
+            height: 150px;
+            width: auto; /* Mantener la proporción de la imagen */
+            margin: 5px;
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px; /* Espaciado entre las imágenes */
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5em;
+            }
+
+            nav {
+                font-size: 1em;
+            }
+
+            section {
+                flex: 1 1 100%; /* Ocupa el 100% en pantallas pequeñas */
+            }
+
+            aside {
+                flex: 1 1 100%; /* Ocupa el 100% en pantallas pequeñas */
+            }
+
+            img {
+                height: 100px; /* Reducir tamaño de imagen en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>MINSU</header>
+    <nav>
+        <ul>
+            <li><a href="#ini">Inicio</a></li>
+            <li><a href="#mis">Misión</a></li>
+            <li><a href="#vis">Visión</a></li>
+            <li><a href="#pro">Productos</a></li>
+            <li><a href="#ser">Servicios</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1 id="ini">Inicio</h1>
+            Somos una empresa que se dedica a ....
+            <hr>
+            <h1 id="mis">Misión</h1>
+            Nuestra Misión es ....
+            <hr>
+            <h1 id="vis">Visión</h1>
+            Nuestra Visión es ....
+            <hr>
+            <h1 id="pro">Productos</h1>
+            Contamos con los siguientes productos ....
+            <div>
+                <img src="https://img.freepik.com/vector-gratis/calculadora-flotante-cartoon-vector-icono-ilustracion-finanzas-negocio-icono-concepto-aislado-plano_138676-9297.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1727222400&semt=ais_hybrid" alt="Calculadora" title="Calculadora"> 
+                <img src="https://cladera.org/foda/images/subcat-2132.jpg" alt="Libros Contables" title="Libros Contables">
+                <img src="https://static.vecteezy.com/system/resources/previews/035/632/512/non_2x/receipt-icon-invoice-icon-total-bill-icon-with-dollar-symbol-illustration-in-flat-design-on-green-background-with-long-shadow-vector.jpg" alt="Facturas" title="Facturas"> 
+                <img src="https://previews.123rf.com/images/iulika1/iulika11710/iulika1171000212/88844669-fondo-colorido-con-art%C3%ADculos-de-papeler%C3%ADa-oficina-o-%C3%BAtiles-escolares-ilustraci%C3%B3n-vectorial.jpg" alt="Papelería y Utiles para Oficina" title="Papelería y Utiles para Oficina">
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-computo-escritorio-moderno_114360-12156.jpg" alt="Computadora" title="Computadora">
+                <img src="https://nacional.cl/media/catalog/product/cache/8c23bea774b3b1fa2a2bbbf684ab2c26/5/0/50320780.jpg" alt="Engrapadora" title="Engrapadora">
+            </div>
+            <hr>
+            <h1 id="ser">Servicios</h1>
+            Los servicios que presentamos son los siguientes ....
+        </section>
+        <aside>
+            <ol>
+                <li><a href="https://economipedia.com/definiciones/inventario.html">Inventarios</a></li>
+                <li><a href="https://www.eleconomista.es/diccionario-de-economia/balance">Balances</a></li>
+                <li><a href="https://economipedia.com/definiciones/ajuste-contable.html">Ajustes</a></li>
+                <li><a href="https://contabilizate.com/blog/calculo-de-impuestos/el-calculo-de-impuestos/">Calculo de Impuestos</a></li>
+            </ol>
+        </aside>
+    </main>
+    <footer>
+        Teléfono: 37410607
+        <br>
+        e-mail: minsu@gmail.com
+    </footer>
+</body>
+</html>
